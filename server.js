@@ -27,6 +27,30 @@ pool.query('SELECT NOW()', (err, res) => {
   }
 });
 
+const seedData = [
+  {
+    name: 'John',
+    age: 30,
+  },
+  {
+    name: 'Jane',
+    age: 25,
+  },
+];
+
+// seedData.forEach((data) => {
+//   pool.query('INSERT INTO users (name, age) VALUES ($1, $2)', [data.name, data.age], (err, res) => {
+//     if (err) {
+//       console.log(err);
+//     } else {
+//       console.log(`Inserted data for ${data.name}`);
+//     }
+//   });
+// });
+
+// Close the database connection after seeding
+pool.end();
+
 
 // Routes
 app.get('/', (req, res) => {
