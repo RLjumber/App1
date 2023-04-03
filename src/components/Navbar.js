@@ -6,7 +6,7 @@ const Navbar = () => {
 
     const typStyle = {
         // border: "solid red 1px",
-        marginLeft: "4vw",
+        // marginLeft: "4rem",
         borderLeft: "solid white 1px",
         padding: "4rem"
     }
@@ -14,13 +14,15 @@ const Navbar = () => {
   return (
     <Grid  sx={{
         // border: "solid red 1px",
-        marginTop: "5%",
+        marginTop: "5rem",
         width: "50vw",
-        marginLeft: "1vw"
+        marginLeft: "3rem",
+        
     }}
     container spacing={10}
     direction="column"
     color={"lavender"}
+    display={'flex'}
     >
         <Grid item xs={1} sx={typStyle}>
             <Typography variant='h1' component={"h3"}>About</Typography>
