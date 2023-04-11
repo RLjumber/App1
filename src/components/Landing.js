@@ -16,11 +16,11 @@ const Landing = () => {
 
     const overlayStyles = {
         position: "absolute",
-        top: "50%",
-        left: "50%",
-        transform: "translate(-50%, -50%)",
-        width: "80vw",
-        height: "60vh",
+        // top: "40%",
+        left: "5%",
+        // transform: "translate(-50%, -50%)",
+        width: "30vw",
+        height: "80vh",
         background: "transparent"
     };
 
